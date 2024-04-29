@@ -12,7 +12,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #6fa3ab;
+  background: #323437;
 }
 ::selection{
   color: #fff;
@@ -21,7 +21,8 @@ body{
 .wrapper{
   width: 770px;
   padding: 35px;
-  background: #fff;
+  background: #323437;
+  color: #646669;
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
@@ -52,16 +53,14 @@ body{
   position: relative;
 }
 .typing-text p span.correct{
-  color: #56964f;
+  color: #fff;
 }
 .typing-text p span.incorrect{
-  color: #cb3439;
-  outline: 1px solid #fff;
-/*   background: #ffc0cb; */
+  color: #ca4754;
   border-radius: 4px;
 }
 .typing-text p span.active{
-  color: #17A2B8;
+  /* color: #17A2B8;re  */
 }
 .typing-text p span.active::before{
   position: absolute;
@@ -72,8 +71,21 @@ body{
   left: 0;
   opacity: 0;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #e2b714;
+
   animation: blink 1s ease-in-out infinite;
+}
+.highlight{
+  color: #e2b714;
+}
+.highlight-r{
+  color: #ca4754;
+}
+.highlight-w{
+  color: #fff;
+}
+.highlight-wt{
+  color: green;
 }
 @keyframes blink{
   50%{ 
@@ -98,7 +110,7 @@ body{
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #e2b714;
   transition: transform 0.3s ease;
 }
 .content button:active{
@@ -182,3 +194,4 @@ li:not(:first-child) span{
     margin-top: 10px;
   }
 }
+
